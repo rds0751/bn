@@ -237,7 +237,7 @@ export class BigNumber implements Hexable {
                 return new BigNumber(_constructorGuard, toHex(new BN(value)));
             }
 
-            return logger.throwArgumentError("invalid BigNumber string", "value", value);
+            return logger.throwArgumentError("invalid BigNumber strings", "value", value);
         }
 
         if (typeof(value) === "number") {
